@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
-    // Ensure assets load correctly on GitHub Pages
+    // IMPORTANT: ensure assets are loaded from the repo path on GitHub Pages
     base: '/louisguskatinginstructor/',
     server: {
       port: 3000,
